@@ -32,7 +32,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
   <script src="${static.url('js/course-about.js')}"></script>
 
   <script type="text/javascript">
-  (function() {
+  /*(function() { */
 
     (function(require) {
       require(['edx-ui-toolkit/js/utils/html-utils'], function(HtmlUtils) {
@@ -74,7 +74,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             $.ajax({
               url: "${reverse('add_course_to_cart', args=[course.id.to_deprecated_string()]) | n, js_escaped_string}",
               type: "POST",
-              /* Rant: HAD TO USE COMPLETE B/C PROMISE.DONE FOR SOME REASON DOES NOT WORK ON THIS PAGE. */
+              /* Rant: HAD TO USE COMPLETE B/C PROMISE.DONE FOR SOME REASON DOES NOT WORK ON THIS PAGE. */ 
               complete: add_course_complete_handler
             })
             event.preventDefault();
@@ -141,17 +141,16 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 
 <section class="course-info" xmlns="http://www.w3.org/1999/html">
   <header class="hero hero-video grid-manual">
-    <div class="hero-image" style="background: url('${static.url(course_details.banner_image_asset_path)}') no-repeat center right;">
+     <div class="hero-image" style="background: url('${static.url(course_details.banner_image_asset_path)}') no-repeat center right;">
       <div class="tint-dark no-background-mobile"></div>
     </div>
     <div class="tint-dark no-background-mobile">
       <div class="grid-container grid-manual">
-        <div class="row">
+      <div class="row">
           <div class="col col-12 sm-col-12 md-col-4 lg-col-4 xl-col-4 video">
             <div class="video-data">
               <a href="#video-modal" class="media" rel="leanModal">
-                <img src="${static.url(course_details.video_thumbnail_image_asset_path)}" alt="${course_details.video_thumbnail_image_name}">
-                <span class="play-btn"></span>
+                <span class="play-btn" style="top:120px!important;"></span>
               </a>
             </div>
           </div>
@@ -167,7 +166,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
   </header>
   <div id="sticky" class="course-detail light-bg">
     <div class="grid-manual grid-container">
-      <div class="inner-container">
+      <div class="inner-container md-col-12" style="margin: auto; padding-top:20px;">
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-6 sticky-course-title hidden">
             <span>${course_details.title or course.display_name}</span>
@@ -188,7 +187,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
           <%
             btn_text = 'Enroll Now'
             btn_href = '#'
-            btn_class = ''
+            btn_class = 'register'
             btn_class_bulk = ''
             btn_id = ''
           %>
@@ -285,8 +284,8 @@ from openedx.core.djangolib.js_utils import js_escaped_string
       </div>
     </div>
   </div>
-  <div class="grid-manual grid-container">
-    <div class="inner-container">
+  <div class="grid-manual grid-container md-col-12">
+    <div class="inner-container md-col-12">
       <div class="description-container">
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-8">

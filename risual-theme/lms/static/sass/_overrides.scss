@@ -35,7 +35,8 @@ a{
   &.brand-link{
     color: $brand-color !important;
   }
-}#success-message{
+}
+#success-message{
   padding: 0;
   .alert {
     min-width: 0;
@@ -43,8 +44,7 @@ a{
     border-right-width: 0;
     border-bottom-width: 0;
     box-shadow: none;
-  }
-}
+}}
 .grid-container{
   padding: 0 1rem;
 }
@@ -61,27 +61,29 @@ a{
 .light-bg{
   background-color: $course-section-background-color;
 }
-.btn-client{
-  background-color: #fcaf17 !important;
-  border-color: #fcaf17 !important;
-  font-weight: normal !important;
-  box-shadow: none !important;
-  color: $white !important;
-  text-shadow: none !important;
-  &:hover{
-    background-color: lighten(#fcaf17, 10%) !important;
-    background-image: none !important;
-  }
-  &.btn-elevated{
-    box-shadow: inset 0 -3px 0 0 darken($brand-color, 15%) !important;
-  }
+.btn-client {
+    background-color: $risual-orange-color !important;
+    border-color: $risual-orange-color !important;
+    font-weight: normal !important;
+    box-shadow: none !important;
+    color: $white !important;
+    text-shadow: none !important;
+
+    &:hover {
+        background-color: lighten($risual-orange-color, 10%) !important;
+        background-image: none !important;
+    }
+
+    &.btn-elevated {
+        box-shadow: inset 0 -3px 0 0 darken($brand-color, 15%) !important;
+    }
 }
 .btn-success{
-  background-color: #fcaf17!important;
+  background-color: $risual-orange-color!important;
   color: $white !important;
-  border-color: #fcaf17;
+  border-color: $risual-orange-color;
   &:hover{
-    background-color: lighten(#fcaf17, 10%) !important;
+    background-color: lighten($risual-orange-color, 10%) !important;
   }
 }
 .btn-block{
@@ -498,7 +500,7 @@ header.header-main {
             font-size: 1rem;
           }
           .btn-neutral { 
-              background-color: #FCAF17;
+              background-color: $risual-orange-color;
             border-color: $white;
             padding: 0.8em 2em;
             color: $white;
@@ -513,7 +515,7 @@ header.header-main {
             }
             &:hover{
               text-decoration: none;
-                 background-color: lighten(#fcaf17, 10%)
+                 background-color: lighten($risual-orange-color, 10%)
             }
           }
         }
@@ -527,8 +529,9 @@ header.header-main {
     }
   }
   &.hero-main{
-    background: url("../images/books_chalk.jpg") no-repeat top center !important;
+    background: url("../images/hero_bg.jpg") no-repeat top center !important;
     background-size: cover !important;
+      height:500px !important;
   }
   &.hero-catalog{
     background: url("../images/lightbulb.jpg") no-repeat center center !important;
@@ -728,10 +731,10 @@ header.header-main {
     }
   }
   .btn-neutral{
-    border-color: #fcaf17;
+    border-color: $risual-orange-color;
     color: $brand-color;
     &:hover{
-       background-color: lighten(#fcaf17, 10%);
+       background-color: lighten($risual-orange-color, 10%);
       color: $white;
     }
   }
@@ -976,7 +979,7 @@ header.header-main {
 .page-heading{
   height: 110px;
  // background: url("../images/page-heading.jpg") center center no-repeat;
-    background-color: #fcaf17 !important;
+    background-color: $risual-orange-color !important;
   background-size: cover;
   h1{
     //background-color: rgba(108, 106, 106, 0.13);

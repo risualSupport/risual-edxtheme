@@ -1,72 +1,67 @@
 ## mako
 <%page expression_filter="h"/>
+<%inherit file="main.html" />
 <%namespace name='static' file='static_content.html'/>
-<%namespace file='main.html' import="login_query"/>
 <%!
 from django.utils.translation import ugettext as _
 from django.core.urlresolvers import reverse
-from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
 %>
 
+<%block name="headextra">
+<link rel="stylesheet" type="text/css" href="${static.url('css/slick.css')}"/>
+</%block>
 
-<header id="global-navigation" class="header-main" >
-  <nav class="nav-wrapper" aria-label="${_('Global')}">
-    <div class="grid-manual grid-container">
-        <div  class="row">
-          <div class="col col-6 sm-col-4 md-col-4 lg-col-3 xl-col-3">
-            <div class="logo">
-              <a href="${marketing_link('ROOT')}">
-                <img src="${static.url('images/openedx-logo.png')}" alt="openedx-logo" style="height:90px; width:160px;" />
-              </a>
-            </div>
-          </div>
-        <div class="col col-6 sm-col-8 md-col-8 lg-col-6 xl-col-6 pull-right">
-          <div class="navbar-collapse">
-            <div class="collapsed-button">
-              <span></span><span></span><span></span>
-            </div>
-            <ul class="list-inline">
-              % if user.is_authenticated():
-                <%
-                  username = user.username
-                  profile_image_url = get_profile_image_urls_for_user(user)['medium']
-                %>
-                <li class="user-account">
-                  <span class="user-img"><img src="${profile_image_url}" alt=""></span>
-                  <span class="user-name">${username}</span>
-                  <ul>
-                    <li><a href="${reverse('dashboard')}">${_("Dashboard")}</a></li>
-                    <li><a href="${reverse('learner_profile', kwargs={'username': user.username})}">${_("Profile")}</a></li>
-                    <li><a href="${reverse('account_settings')}">${_("Account")}</a></li>
-                    <li><a href="${reverse('logout')}">${_("Sign Out")}</a></li>
-                  </ul>
-                </li>
-              % else:
-              <li>
-                <a class="btn-brand btn-client" href="/register${login_query()}">${_("Create Account")}</a>
-              </li>
-              <li>
-                <a href="/login${login_query()}" class="brand-link">${_("Sign in")}</a>
-              </li>
+<%block name="js_extra">
+<script type="text/javascript">
+  $(window).load(function () {
+    $(".more-about-btn").removeClass("hidden");
+    if (getParameterByName('next')) {
+      $('#login').trigger("click");
+    }
+  })
+</script>
+<%include file="about_site.html" />
+<script type="text/javascript" src="${static.url('js/slick.min.js')}"></script>
+</%block>
+
+<section class="home">
+  <header class="hero-main hero">
+    <div class="tint-dark">
+      <div class="grid-container grid-manual">
+        <div class="row">
+          <div class="col col-10 sm-col-10 md-col-10 lg-col-8 xl-col-6 text-tint">
+            <p>Lorem ipsum dolor sit amet, ad mea dictas audiam, nec id graecis explicari hasnain</p>
+            % if show_homepage_promo_video:
+              <a href="#video-modal" class="btn-neutral btn-large" rel="leanModal">Watch video <i class="fa fa-play"></i></a>
             % endif
-              <li>
-                <a href="/courses" class="brand-link">${_("Courses")}</a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
-      </nav>
-</header>
+    </div>
+  </header>
 
-<script>
-  $( ".collapsed-button" ).click(function() {
-    $(".navbar-collapse .list-inline").toggleClass("show-menu");
+
+  <section class="about-section">
+    <div class="about-container"></div>
+  </section>
+</section>
+
+% if show_homepage_promo_video:
+<section id="video-modal" class="modal modal-custom custom-video-modal">
+  <div class="inner-wrapper">
+    <iframe title="YouTube Video" width="640" height="360"
+            src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0"
+            allowfullscreen></iframe>
+  </div>
+</section>
+% endif
+
+% if show_signup_immediately is not UNDEFINED:
+## NOTE: This won't work in production, because anonymous views are cached, so it will
+## show either with or without this extra js for 3 minutes at a time.
+<script type="text/javascript">
+  $(window).load(function () {
+    $('#signup_action').trigger("click");
   });
-
-  $(".user-account .user-name").click(function(){
-    $(".user-account ul").toggleClass("show-user-menu");
-  });
-
-
 </script>
+% endif

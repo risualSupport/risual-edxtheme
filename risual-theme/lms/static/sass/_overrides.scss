@@ -32,7 +32,7 @@ a{
     text-decoration: none;
     outline: none;
   }
-  &.brand-link{
+   &.brand-link{
     color: $brand-color !important;
   }
 }
@@ -62,13 +62,13 @@ a{
   background-color: $course-section-background-color;
 }
 .btn-client {
-    background-color: $risual-orange-color !important;
-    border-color: $risual-orange-color !important;
+    background-color: #fcaf17 !important;
+    border-color: #fcaf17 !important;
     font-weight: normal !important;
     box-shadow: none !important;
     color: $white !important;
     text-shadow: none !important;
-
+}
     &:hover {
         background-color: lighten($risual-orange-color, 10%) !important;
         background-image: none !important;

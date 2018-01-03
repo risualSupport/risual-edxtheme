@@ -17,5 +17,5 @@ $pattern-library-path: '../../edx-pattern-library' !default;
 @import 'build-lms-v2';
 
 // Load overrides
-@import "_overrides";
-@import "_accordion";
+@import "overrides";
+@import "accordion";

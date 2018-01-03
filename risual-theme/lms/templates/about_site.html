@@ -48,4 +48,34 @@
   </div>
 </script>
 
+ <section class="courses-section">
+    <div class="courses-container">
+      <div class="highlighted-courses">
+        <section class="courses">
+          <div class="grid-manual">
+
+            <div class="row">
+              <div class="col col-12 text-center">
+                <h2>
+                  <span> ${_('Lorem ipsum dolor sit amet.')}</span>
+                </h2>
+              </div>
+            </div>
+
+            <div class="row course-list">
+              %for course in courses:
+              <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
+                <div class="courses-listing-item">
+                  <%include file="../course.html" args="course=course"/>
+                </div>
+              </div>
+              %endfor
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
 <script src="${static.url('js/about-site.js')}"></script>

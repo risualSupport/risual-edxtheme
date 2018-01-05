@@ -69,11 +69,6 @@ a{
     color: $white !important;
     text-shadow: none !important;
 }
-    &:hover {
-        background-color: lighten($risual-orange-color, 10%) !important;
-        background-image: none !important;
-    }
-
     &.btn-elevated {
         box-shadow: inset 0 -3px 0 0 darken($brand-color, 15%) !important;
 }

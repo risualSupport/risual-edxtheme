@@ -972,10 +972,16 @@ header.header-main {
 // Static pages
 
 .page-heading{
-  height: 110px;
- // background: url("../images/page-heading.jpg") center center no-repeat;
-    background-color: $risual-orange-color !important;
+  height: 250px;
+  background: url("../images/HeaderRectangleGraphic.png") no-repeat;
   background-size: cover;
+  }
+  
+ .page-heading h1{
+	color: $white;
+	font-size: 80px;
+ }
+  
   h1{
     //background-color: rgba(108, 106, 106, 0.13);
     text-align: center;

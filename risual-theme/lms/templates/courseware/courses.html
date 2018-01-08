@@ -9,8 +9,9 @@
     <div class="tint-dark">
       <div class="grid-container grid-manual">
         <div class="row">
-          <div class="col col-10 sm-col-10 md-col-10 lg-col-8 xl-col-6 text-tint">
-            <p>Lorem ipsum dolor sit amet, sea te quaeque suscipiantur.</p>
+          <div class="col col-10 sm-col-10 md-col-10 lg-col-8 xl-col-6 text-tint .page-heading h1">
+            <h1>Courses</h1>
+			<p>View all the courses currently available</p>
           </div>
         </div>
       </div>
@@ -24,20 +25,49 @@
           <div class="grid-manual">
 
             <div class="row">
-              <div class="col col-12 text-center">
-                <h2>
-                  <span> ${_('Lorem ipsum dolor sit amet.')}</span>
-                </h2>
+              <div class="col-5">
+                <h2><span>Viewing 1000 Matching Courses</span></h2>
               </div>
+			  <div class="col-7">
+			  <!--Search Bar to go here-->
+			 <form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
             </div>
 
             <div class="row course-list">
               %for course in courses:
-              <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
+              <div class="col col-12 col-sm-12 col-md-9 col-lg-9">
                 <div class="courses-listing-item">
                   <%include file="../course.html" args="course=course"/>
                 </div>
               </div>
+			  
+			  <!--Sidebar-->
+			  <div class="col-3">
+				<ul>
+				<li>Filter Title</>
+				 <li><a href="#">Filter 1</a></li> 
+				 <li><a href="#">Filter 2</a></li> 
+				 <li><a href="#">Filter 3</a></li> 
+				 <li><a href="#">Filter 4</a></li> 
+				 </ul>
+				 <ul>
+				<li>Filter Title</>
+				 <li><a href="#">Filter 1</a></li> 
+				 <li><a href="#">Filter 2</a></li> 
+				 <li><a href="#">Filter 3</a></li> 
+				 <li><a href="#">Filter 4</a></li> 
+				 </ul>
+				 <ul>
+				<li>Filter Title</>
+				 <li><a href="#">Filter 1</a></li> 
+				 <li><a href="#">Filter 2</a></li> 
+				 <li><a href="#">Filter 3</a></li> 
+				 <li><a href="#">Filter 4</a></li> 
+				 </ul>
+			  </div>
               %endfor
             </div>
 

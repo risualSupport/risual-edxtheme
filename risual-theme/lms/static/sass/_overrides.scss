@@ -529,7 +529,7 @@ header.header-main {
       height:500px !important;
   }
   &.hero-catalog{
-    background: url("../images/lightbulb.jpg") no-repeat center center !important;
+    background: url("../images/HeaderRectangleGraphic.png") no-repeat center center !important;
     background-size: cover !important;
   }
   &.hero-video{
@@ -980,7 +980,7 @@ header.header-main {
  .page-heading h1{
 	color: $white;
 	font-size: 80px;
-	margin-top: 72px;
+	padding-top: 72px;
  }
   
   h1{

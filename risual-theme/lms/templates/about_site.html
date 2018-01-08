@@ -1,7 +1,5 @@
 ## mako
 <%page expression_filter="h"/>
-<%! from django.utils.translation import ugettext as _ %>
-<%inherit file="../main.html" />
 <%namespace name='static' file='static_content.html'/>
 
 <script type="text/template" id="about-content">
@@ -54,16 +52,6 @@
 			<h2>Courses Starting Soon</h2>
 		</div>
 	</div>
-	 <div class="row course-list">
-              %for course in courses:
-              <div class="col col-12 col-sm-12 col-md-9 col-lg-9">
-                <div class="courses-listing-item">
-                  <%include file="../course.html" args="course=course"/>
-                </div>
-              </div>
-	 </div>
-	 %endfor
-			  
 	<div class="row">
 		<div class="col-12">
 			<a href="/Courses" class="btn-brand btn-client view-courses">View All Courses</a>
@@ -71,7 +59,7 @@
 	</div>
 	
 	<div class="row">
-		<div class="col-12 text-center "> 
+		<div class="col-12 text-center"> 
 			<h2>Popular Courses Starting Soon</h2>
 		</div>
 	</div>

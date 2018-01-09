@@ -39,21 +39,7 @@
             </div>
 			
 			<div class="row">
-			<div class="lg-col-9">
-            <div class="row course-list">
-              %for course in courses:
-              <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
-                <div class="courses-listing-item">
-                  <%include file="../course.html" args="course=course"/>
-                </div>
-              </div>
-			 
-              %endfor
-            </div>
-			</div>
-	
-
-			<div class="lg-col-3">
+				<div class="lg-col-3">
 			  <!-- Filter Sidebar -->
 			  <div class="row">
 			  <div class="col-12">
@@ -81,6 +67,19 @@
 			  </div>
 			  </div>
 			  </div>
+			<div class="lg-col-9">
+            <div class="row course-list">
+              %for course in courses:
+              <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
+                <div class="courses-listing-item">
+                  <%include file="../course.html" args="course=course"/>
+                </div>
+              </div>
+			 
+              %endfor
+            </div>
+			</div>
+	
 			</div>
 			
           </div>

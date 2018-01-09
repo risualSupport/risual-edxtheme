@@ -18,6 +18,7 @@ urlpatterns = (
     url(r'^500$', 'render_500'),
 
     url(r'^MyNewPage$', 'render', {'template': 'MyNewPage.html'}, name="MyNewPage"),
+	url(r'^MyNewPage$', 'render', {'template': 'about.html'}, name="about"),
      url(r'^test$', 'render', {'template': 'test.html'}, name="test"),
     url(r'^blog$', 'render', {'template': 'blog.html'}, name="blog"),
     url(r'^contact$', 'render', {'template': 'contact.html'}, name="contact"),

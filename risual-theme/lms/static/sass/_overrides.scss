@@ -988,11 +988,22 @@ margin-top: 100px;
   background-size: cover;
   }
   
- .page-heading h1{
+.page-heading h1{
 	color: $white;
 	font-size: 80px;
 	padding-top: 72px;
  }
+ 
+ //Courses Page
+ 
+.courses-filter ul{
+	list-style-type: none:
+	margin-left: 0px;
+} 
+
+.courses-filter-title {
+	margin-bottom: 20px;
+}
   
   h1{
     //background-color: rgba(108, 106, 106, 0.13);

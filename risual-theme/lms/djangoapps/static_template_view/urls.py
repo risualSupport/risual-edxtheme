@@ -19,7 +19,7 @@ urlpatterns = (
 
     url(r'^MyNewPage$', 'render', {'template': 'MyNewPage.html'}, name="MyNewPage"),
 	url(r'^MyNewPage$', 'render', {'template': 'about.html'}, name="about"),
-     url(r'^test$', 'render', {'template': 'test.html'}, name="test"),
+    url(r'^test$', 'render', {'template': 'test.html'}, name="test"),
     url(r'^blog$', 'render', {'template': 'blog.html'}, name="blog"),
     url(r'^contact$', 'render', {'template': 'contact.html'}, name="contact"),
     url(r'^donate$', 'render', {'template': 'donate.html'}, name="donate"),

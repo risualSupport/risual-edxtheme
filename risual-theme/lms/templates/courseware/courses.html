@@ -26,6 +26,7 @@
 
             <div class="row">
               <div class="col-5">
+			  <!-- Results Quantity View -->
                 <h2><span>Viewing 1000 Matching Courses</span></h2>
               </div>
 			  
@@ -39,36 +40,12 @@
 
             <div class="row course-list">
               %for course in courses:
-              <div class="col col-12 col-sm-12 col-md-9 col-lg-9">
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="courses-listing-item">
                   <%include file="../course.html" args="course=course"/>
                 </div>
               </div>
-			  
-			  <!-- Filter Sidebar -->
-			  <div class="col-3">
-				<ul>
-				<li>Filter Title</>
-				 <li><a href="#">Filter 1</a></li> 
-				 <li><a href="#">Filter 2</a></li> 
-				 <li><a href="#">Filter 3</a></li> 
-				 <li><a href="#">Filter 4</a></li> 
-				 </ul>
-				 <ul>
-				<li>Filter Title</>
-				 <li><a href="#">Filter 1</a></li> 
-				 <li><a href="#">Filter 2</a></li> 
-				 <li><a href="#">Filter 3</a></li> 
-				 <li><a href="#">Filter 4</a></li> 
-				 </ul>
-				 <ul>
-				<li>Filter Title</>
-				 <li><a href="#">Filter 1</a></li> 
-				 <li><a href="#">Filter 2</a></li> 
-				 <li><a href="#">Filter 3</a></li> 
-				 <li><a href="#">Filter 4</a></li> 
-				 </ul>
-			  </div>
+			 
               %endfor
             </div>
 

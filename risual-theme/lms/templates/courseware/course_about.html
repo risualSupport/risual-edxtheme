@@ -299,7 +299,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 					<p>Video Transcripts<img src="/static/risual-theme/images/video-camera.png" alt="time" width="24" height="24" align="left"></p>
 					<p>Price<img src="/static/risual-theme/images/price-tag.png" alt="time" width="24" height="24" align="left"></p>
                 </div>
-                <div class="col-md-4 text-right">
+                <div class="col-md-6 text-right">
 					<p>${course_details.duration}</p>
 					<p>8 to 10 Hours Per Week</p>
 					<p>5 Courses</p>
@@ -311,11 +311,13 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 					<p>${course_price}</p>
                 </div>
             </div>
+			<div class="row">
             <div class="col-md-12 text-center courses-cta">
-              <h4>Want to purchase this course for a group</h4>
-                <p>You can purchase enrollment codes for this course to distribute to your team</p>
-                <a class="btn btn-warning" href="/contact">Contact Us</a>
+				  <h4>Want to purchase this course for a group</h4>
+					<p>You can purchase enrollment codes for this course to distribute to your team</p>
+					<a class="btn btn-warning" href="/contact">Contact Us</a>
               </div>  
+			</div>  
             </div>
           <div class="col col-md-6">
             <h2>${course_details.title or course.display_name}</h2>
@@ -362,6 +364,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
         </div>
         % endfor
       </div>
+	  </div>
 	  </div>
 </section>
 

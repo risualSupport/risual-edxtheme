@@ -311,15 +311,15 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 					<p>${course_price}</p>
                 </div>
             </div>
-			<div class="row">
-            <div class="col-md-12 text-center courses-cta">
-				  <h4>Want to purchase this course for a group</h4>
-					<p>You can purchase enrollment codes for this course to distribute to your team</p>
-					<a class="btn btn-warning" href="/contact">Contact Us</a>
-              </div>  
-			</div>  
+				<div class="row">
+					<div class="col-md-12 text-center courses-cta">
+						<h4>Want to purchase this course for a group</h4>
+						<p>You can purchase enrollment codes for this course to distribute to your team</p>
+						<a class="btn btn-warning" href="/contact">Contact Us</a>
+					</div>  
+				</div>  
             </div>
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <h2>${course_details.title or course.display_name}</h2>
 			
             <p>${HTML(course_details.overview)}</p>
@@ -365,7 +365,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
         % endfor
       </div>
 	  </div>
-	  </div>
+	</div>
 </section>
 
 

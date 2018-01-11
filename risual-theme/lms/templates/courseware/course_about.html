@@ -286,20 +286,20 @@ from openedx.core.djangolib.js_utils import js_escaped_string
   </div>
 	<div class="container">
         <div class="row">
-          <div class="col md-col-6">
+          <div class="col col-md-6">
             <div class="row">
-                <div class="md-col-6">
-            <p>Average Length <img src="/static/risual-theme/images/time.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Effort<img src="/static/risual-theme/images/speed-meter.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Number of Courses<img src="/static/risual-theme/images/open-book.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Subject<img src="/static/risual-theme/images/mortarboard.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Institution<img src="/static/risual-theme/images/old-school.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Institution Offering Credits<img src="/static/risual-theme/images/old-school.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Language<img src="/static/risual-theme/images/translation.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Video Transcripts<img src="/static/risual-theme/images/video-camera.png" alt="time" width="24" height="24" align="left"></p>
-            <p>Price<img src="/static/risual-theme/images/price-tag.png" alt="time" width="24" height="24" align="left"></p>
+                <div class="col-md-6">
+            <p> Average Length <img src="images/time.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Effort<img src="images/speed-meter.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Number of Courses<img src="images/open-book.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Subject<img src="images/mortarboard.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Institution<img src="images/old-school.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Institution Offering Credits<img src="images/old-school.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Language<img src="images/translation.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Video Transcripts<img src="images/video-camera.png" alt="time" width="24" height="24" align="left"></p>
+            <p>Price<img src="images/price-tag.png" alt="time" width="24" height="24" align="left"></p>
                 </div>
-                <div class="md-col-4 text-right">
+                <div class="col-md-4 text-right">
             <p>${course_details.duration}</p>
             <p>8-10 Hours Per Week</p>
             <p>5 Courses</p>
@@ -309,8 +309,15 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             <p>English</p>
             <p>English</p>
             <p>${course_price}</p>
-                </div> 
-          <div class="col md-col-6">
+                </div>
+            </div>
+            <div class="col-md-12 text-center courses-cta">
+              <h4>Want to purchase this course for a group</h4>
+                <p>You can purchase enrollment codes for this course to distribute to your team</p>
+                <a class="btn btn-warning" href="/contact">Contact Us</a>
+              </div>  
+            </div>
+          <div class="col col-md-6">
             <h2>Introduction to DevOps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed suscipit eros. Vestibulum eleifend ante faucibus metus gravida luctus. Curabitur in dolor ut urna dignissim elementum. Proin vel enim eros. Nam faucibus felis dictum, vulputate quam vitae, volutpat neque. Nullam suscipit, tortor egestas congue tempor, libero justo vestibulum lacus, vitae euismod diam nisi ut risus. <br><br>
 
@@ -324,28 +331,30 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             Vivamus tincidunt, ligula eget hendrerit dictum, mauris nunc lobortis lorem, id rhoncus mi ipsum eu nunc. Suspendisse eget mattis metus. </p>
             
             </div>
+        </div>
 
         <div class="row">
-          <div class="col-6 md-col-4">
+          <div class="col-6 col-md-4">
             <img src="images/" alt="Lecturer image">
               <h4>Lecturer Name</h4>
               <p>Job Title</p>
               <p>Lecturer Details</p>
             </div>
-          <div class="col-6 md-col-4">
+          <div class="col-6 col-md-4">
              <img src="images/" alt="Lecturer image">
               <h4>Lecturer Name</h4>
               <p>Job Title</p>
               <p>Lecturer Details</p>
             </div>
-          <div class="col-6 md-col-4">
+          <div class="col-6 col-md-4">
               <img src="images/" alt="Lecturer image">
               <h4>Lecturer Name</h4>
               <p>Job Title</p>
               <p>Lecturer Details</p>
             </div>
         </div>
-	</div>
+
+      </div>
         <div class="col col-12"><h2>Instructors</h2></div>
         <% index = 0 %>
         % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):

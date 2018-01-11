@@ -288,8 +288,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
     <div class="inner-container md-col-12">
       <div class="description-container">    
 		<div class="row">
-          <div class="col col-md-6">
-            <div class="row">
                 <div class="col-md-6">
             <p> Average Length <img src="/static/risual-theme/images/time.png" alt="time" width="24" height="24" align="left"></p>
             <p>Effort<img src="/static/risual-theme/images/speed-meter.png" alt="time" width="24" height="24" align="left"></p>
@@ -349,52 +347,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
               <p>Job Title</p>
               <p>Lecturer Details</p>
             </div>
-        </div>
-		
-		<div class="row">
-          <div class="col col-12 sm-col-12 md-col-8">
-            <h2> Course Description</h2>
-            <div class="course-description">
-              <p>${course_details.description}</p>
-            </div>
-
-            <h2> What you'll learn</h2>
-            <div class="course-learning">
-              <ul class="list-bulleted">
-                % for item in course_details.learning_info:
-                  <li>${item}</li>
-                %endfor
-              </ul>
-            </div>
-          </div>
-          % if can_enroll and not is_course_full:
-          <div class="col col-12 sm-col-12 md-col-4 pull-right extras">
-            <div class="course-features group-purchase">
-              <h2>${_("Want to purchase this course for a group?")} </h2>
-              <p>${_("You can purchase enrollment codes for this course to distribute to your team")}</p>
-
-              % if ecommerce_bulk_checkout_link:
-                <%
-                    url = "mailto:harvardxplus@harvard.edu?Subject={course_id}%20{run}%20Bulk%20Discount".format(course_id=course_details.course_id, run=course_details.run)
-                    link_start = HTML("<a href='{url}'>").format(url=Text(url))
-                %>
-              <a href="${ecommerce_bulk_checkout_link}" id="ecommerce_bulk_checkout_button" class="btn-block btn-success btn-large btn-enroll ${btn_class_bulk}">${_("Purchase for a Group")}</a>
-              <p>
-                ${Text(_("Bulk discounts may apply for groups larger than 10. Contact {link_start}harvardxplus@harvard.edu{link_end} for more information.")).format(
-                  link_start=HTML(link_start),
-                  link_end=HTML('</a>')
-                )}
-              </p>
-              % else:
-                <%
-                    url = "mailto:harvardxplus@harvard.edu?Subject={course_id}%20{run}%20Group%20Purchase".format(
-                          course_id=course_details.course_id, run=course_details.run)
-                %>
-              <a href="${url}" class="btn-block btn-success btn-large btn-enroll">${_("Email Us")}</a>
-              % endif
-            </div>
-          </div>
-          % endif
         </div>
         <div class="col col-12"><h2>Instructors</h2></div>
         <% index = 0 %>

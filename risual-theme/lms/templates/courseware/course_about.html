@@ -364,19 +364,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
       </div>
 </section>
 
-<section class="about-section">
-  <div class="about-container"></div>
-    <div class="grid-manual">
-        <div class="row">
-            <div class="col col-12 sm-col-12 md-col-4 text-center btn-enroll-mobile">
-                <a href="${btn_href}" id="${btn_id}" class="btn-block btn-success btn-large btn-enroll ${btn_class}">
-                  ${_(btn_text)}
-                </a>
-           </div>
-        </div>
-    </div>
-</section>
-
 ## Need to put this hidden form on the page so that the registration button works.
 ## Since it's no harm to display a hidden form, we display it with the most permissive conditional
 ## which is when the student is not registered.

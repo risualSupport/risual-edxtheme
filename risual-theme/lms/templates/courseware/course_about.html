@@ -284,9 +284,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
       </div>
     </div>
   </div>
-  <div class="grid-manual grid-container md-col-12">
-    <div class="inner-container md-col-12">
-      <div class="description-container">    
+   <div class="container">
 		<div class="row">
                 <div class="col-md-6">
             <p> Average Length <img src="/static/risual-theme/images/time.png" alt="time" width="24" height="24" align="left"></p>
@@ -311,7 +309,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             <p>${course_price}</p>
                 </div>
             </div> 
-            </div>
           <div class="col col-md-6">
             <h2>Introduction to DevOps</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed suscipit eros. Vestibulum eleifend ante faucibus metus gravida luctus. Curabitur in dolor ut urna dignissim elementum. Proin vel enim eros. Nam faucibus felis dictum, vulputate quam vitae, volutpat neque. Nullam suscipit, tortor egestas congue tempor, libero justo vestibulum lacus, vitae euismod diam nisi ut risus. <br><br>
@@ -326,7 +323,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             Vivamus tincidunt, ligula eget hendrerit dictum, mauris nunc lobortis lorem, id rhoncus mi ipsum eu nunc. Suspendisse eget mattis metus. </p>
             
             </div>
-        </div>
 
         <div class="row">
           <div class="col-6 col-md-4">
@@ -348,6 +344,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
               <p>Lecturer Details</p>
             </div>
         </div>
+	</div>
         <div class="col col-12"><h2>Instructors</h2></div>
         <% index = 0 %>
         % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):

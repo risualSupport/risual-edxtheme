@@ -324,8 +324,8 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             
             </div>
         </div>
-      
-        <div class="col col-12"><h2>Instructors</h2></div>
+      <div class="row">
+        <div class="col col-12"><h2>Instructors</h2>
         <% index = 0 %>
         % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
         <div class="row instructors">
@@ -362,7 +362,10 @@ from openedx.core.djangolib.js_utils import js_escaped_string
         </div>
         % endfor
       </div>
+	  </div>
 </section>
+
+
 
 ## Need to put this hidden form on the page so that the registration button works.
 ## Since it's no harm to display a hidden form, we display it with the most permissive conditional

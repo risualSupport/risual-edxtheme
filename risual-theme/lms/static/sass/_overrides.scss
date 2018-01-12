@@ -1037,7 +1037,22 @@ view-course-title h2{
 //Contact Page
 
 .contact-background {
-		background-image: url("/static/risual-theme/images/contact-bk.png")
+	background-image: url("/static/risual-theme/images/contact-bk.png");
+	height: 500px;
+}
+
+.contact-background h1 {
+	color: #ffffff;
+	margin-top: 115px;
+	margin-bottom: 60px;
+}
+
+.contact-background img {
+	margin-bottom: 20px;
+}
+
+.contact-background p {
+	color: #ffffff;
 }
   
   h1{

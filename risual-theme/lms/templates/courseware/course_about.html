@@ -139,7 +139,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 
 <%block name="pagetitle">${course.display_name_with_default}</%block>
 
-<section class="course-info" xmlns="http://www.w3.org/1999/html">
+<section class="" xmlns="http://www.w3.org/1999/html">
   <header class="hero hero-video grid-manual">
      <div class="hero-image" style="background: url('${static.url(course_details.banner_image_asset_path)}') no-repeat center right;">
       <div class="tint-dark no-background-mobile"></div>
@@ -287,7 +287,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 	<div class="container grid-manual">
         <div class="row">
           <div class="col-6">
-            <div class="row">
+            <div class="row course-info">
                 <div class="col-6 pull-right">
 					<p>Average Length <img src="/static/risual-theme/images/time.png" alt="time" width="24" height="24" align="left"></p>
 					<p>Effort<img src="/static/risual-theme/images/speed-meter.png" alt="time" width="24" height="24" align="left"></p>

@@ -19,7 +19,7 @@ from django.conf import settings
   <div class="grid-manual grid-container">
     <div class="inner-container" style="width:100% !important;">
       <div class="row">
-        <div style="width:70% !important; align-items:center !important;">
+        <div style="width:70% !important; margin-left: 15%SS align-items:center !important;">
           <form id="contact_form" class="form-block">
             <div class="input-group">
               <label for="">Email*</label>
@@ -90,6 +90,25 @@ from django.conf import settings
     </div>
 </div>
 
+<section>
+	<div class="grid-manual">
+		<div class="row">
+			<div class="col-12"
+			<h1>Need To Talk Now</h1>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-4">
+                <img src="/static/risual-theme/images/phone-contact.png" alt="">
+            </div>
+            <div class="col-4">
+                <img src="/static/risual-theme/images/twitter-contact.png" alt="">
+            </div>
+            <div class="col-4">
+                <img src="/static/risual-theme/images/email-contact.png" alt="">
+            </div>    
+        </div>
+	</div>
 
 <%block name="js_extra">
   <script src="${static.url('js/contact-form.js')}"></script>

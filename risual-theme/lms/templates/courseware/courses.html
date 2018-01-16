@@ -19,8 +19,8 @@
 
             <div class="row .course-search">
               <div class="col-5">
-				<!-- Results Quantity View -->
-                <h2>Viewing 1000 Matching Courses</h2>
+				<!-- Results Quantity View 
+                <h2>Viewing 1000 Matching Courses</h2> -->
               </div>
 			  
 			  <!-- Search Bar 
@@ -62,17 +62,18 @@
 						</div>
 					</div>
 			  </div> -->
+			  
 			<div class="lg-col-12">
-            <div class="row course-list">
-              %for course in courses:
-              <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
-                <div class="courses-listing-item">
-                  <%include file="../course.html" args="course=course"/>
-                </div>
-              </div>
-			 
-              %endfor
-            </div>
+				<div class="row course-list">
+				  %for course in courses:
+				  <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
+					<div class="courses-listing-item">
+					  <%include file="../course.html" args="course=course"/>
+					</div>
+				  </div>
+				 
+				  %endfor
+				</div>
 			</div>
 	
 			</div>

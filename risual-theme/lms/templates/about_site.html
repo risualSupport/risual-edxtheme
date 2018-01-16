@@ -57,6 +57,19 @@
 			<a href="${static.url('/courses')}" class="btn-brand btn-client view-courses">View All Courses</a>
 		</div>
 	</div>
+		<div class="lg-col-12">
+            <div class="row course-list">
+              %for course in courses:
+              <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
+                <div class="courses-listing-item">
+                  <%include file="/course.html" args="course=course"/>
+                </div>
+              </div>
+			 
+              %endfor
+            </div>
+		</div>
+			
 	<div class="row">
 		<div class="col-12 text-center view-course-title"> 
 			<h2>Popular Courses Starting Soon</h2>

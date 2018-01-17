@@ -140,26 +140,22 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 <%block name="pagetitle">${course.display_name_with_default}</%block>
 
 <section class="" xmlns="http://www.w3.org/1999/html">
-	
-	  <header class="header-img">
 
-   <div class="grid-manual">
-    <div class="row">
-      <div class="col-12">
-           <div class="row highlight">
-               <div class="col-8 text-left">
-                    <!-- <h1>${course.display_name}</h1> -->
-                    <a href="#">Enroll in Course</a>
-               </div>
-               <div class="col-4 thumbnail-image">
-                    <!-- <img src="${course.course_image_url}" alt="${course.display_name_with_default} ${course.display_number_with_default}" /> -->
-               </div>
-            </div>
-      </div>  
-    </div>
-    </div>
-  </header>
-
+		<div class="grid-manual">
+			<div class="row">
+				<div class="col-12">
+					<div class="row highlight">
+						<div class="col-8 text-left">
+							<h1>${course.display_name}</h1>
+							<a href="#">Enroll in Course</a>
+						</div>
+						<div class="col-4 thumbnail-image">
+							<img src="${course.course_image_url}" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
+						</div>
+					</div>
+				</div>  
+			</div>
+		</div>
 	
   <div id="sticky" class="course-detail light-bg">
     <div class="grid-manual grid-container">

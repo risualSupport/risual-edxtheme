@@ -1022,6 +1022,39 @@ view-course-title h2{
   border-radius: 10px; 
 
 } 
+
+ //Courses View Page
+
+.header-img {
+    background-image: url(..images/about-header.jpg);
+    height: 1040px;
+    background-repeat: no-repeat;
+}
+
+.thumbnail-image img {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    float: right;
+    border: 1px solid #fff;
+}
+
+.highlight {
+    background-color: rgba(251,251,251,0.9);
+    border: 1px solid #fff;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.text-left h1 {
+    margin-bottom: 40px;
+}
+
+.text-left {
+    margin: auto;
+}
+
  
  //Courses Page
  

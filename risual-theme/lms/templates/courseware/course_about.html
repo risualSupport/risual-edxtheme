@@ -147,9 +147,97 @@ from openedx.core.djangolib.js_utils import js_escaped_string
     <div class="row">
       <div class="col-12">
            <div class="row highlight">
+				<%
+            btn_text = 'Enroll Now'
+            btn_href = '#'
+            btn_class = 'register'
+            btn_class_bulk = ''
+            btn_id = ''
+          %>
+
+          % if user.is_authenticated() and registered:
+            <%
+              btn_text = "You are enrolled in this course"
+              btn_class = "disabled"
+            %>
+
+          % elif in_cart:
+            <%
+              btn_text = "This course is in your cart"
+              btn_href = cart_link
+            %>
+
+          % elif is_course_full:
+            <%
+              btn_text = "Course is full"
+              btn_class = "disabled"
+              btn_class_bulk = btn_class
+            %>
+
+          % elif invitation_only and not can_enroll:
+            <%
+              btn_text = "Enrollment in this course is by invitation only"
+              btn_class = "disabled"
+              btn_class_bulk = btn_class
+            %>
+
+          % elif not is_shib_course and not can_enroll:
+            <%
+              btn_text = "Enrollment is Closed"
+              btn_class = "disabled"
+              btn_class_bulk = btn_class
+            %>
+
+          % elif can_add_course_to_cart:
+            <%
+              btn_class = "add-to-cart"
+              btn_text = "Enroll Now"
+            %>
+
+            % if user.is_authenticated():
+              % if user.is_active:
+                <%
+                  btn_href = "#"
+                  btn_id = "add_to_cart_post"
+                %>
+              % else:
+                <%
+                  btn_text = "Please Activate Your Account"
+                  btn_class = "disabled"
+                %>
+              % endif
+            % else:
+              <%
+                btn_href = reg_then_add_to_cart_link
+                btn_id = "reg_then_add_to_cart"
+              %>
+            % endif
+
+            % if ecommerce_checkout and ecommerce_checkout_link and user.is_authenticated():
+                <%
+                  btn_href = ecommerce_checkout_link
+                %>
+            % endif
+
+          % else:
+            % if ecommerce_checkout:
+              % if ecommerce_checkout_link:
+                <% btn_href = ecommerce_checkout_link %>
+              % else:
+                <% btn_href="#" %>
+              % endif
+              % if professional_mode:
+                % if user.is_authenticated():
+                  <% btn_class = "add-to-cart" %>
+                % else:
+                  <%
+                    btn_class = "register"
+                    btn_class_bulk = btn_class
+                  %>
                <div class="col-8 text-left">
                     <h1>Configuring and Operating Microsoft Azure Stack </h1>
-                    <a href="#">Enroll in Course</a>
+                    <a href="${btn_href}" id="${btn_id}" class="btn-block btn-brand btn-client btn-success register text-center ${btn_class}">
+              ${_(btn_text)}</a>
                </div>
                <div class="col-4 thumbnail-image">
                     <img src="imgs/thumbnail.png" alt="">

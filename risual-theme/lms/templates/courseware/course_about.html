@@ -140,8 +140,11 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 <%block name="pagetitle">${course.display_name_with_default}</%block>
 
 <section class="" xmlns="http://www.w3.org/1999/html">
-
-		<div class="grid-manual">
+	
+  <div id="sticky" class="course-detail light-bg">
+    <div class="grid-manual grid-container">
+	<div class="row">
+			<div class="grid-manual">
 			<div class="row">
 				<div class="col-12">
 					<div class="row highlight">
@@ -157,9 +160,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 				</div>  
 			</div>
 		</div>
-	
-  <div id="sticky" class="course-detail light-bg">
-    <div class="grid-manual grid-container">
+	</div>
       <div class="inner-container md-col-12" style="margin: auto; padding-top:20px;">
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-6 sticky-course-title hidden">

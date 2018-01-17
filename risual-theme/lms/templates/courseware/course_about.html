@@ -151,7 +151,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 							</a>
 						</div>
 						<div class="col-4 thumbnail-image">
-							<img src="${course.course_image_url}" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
+							<img src="" alt="" />
 						</div>
 					</div>
 				</div>  
@@ -333,7 +333,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 ## Need to put this hidden form on the page so that the registration button works.
 ## Since it's no harm to display a hidden form, we display it with the most permissive conditional
 ## which is when the student is not registered.
-%if active_reg_button or is_shib_course:
+% if active_reg_button or is_shib_course:
   <div style="display: none;">
     <form id="class_enroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
       <fieldset class="enroll_fieldset">
@@ -346,7 +346,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
       </div>
     </form>
   </div>
-%endif
+% endif
 
 % if course_details.intro_video and course_details.video_thumbnail_image_name:
 <section id="video-modal" class="modal modal-custom custom-video-modal">

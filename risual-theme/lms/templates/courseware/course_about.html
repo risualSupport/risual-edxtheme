@@ -140,27 +140,30 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 <%block name="pagetitle">${course.display_name_with_default}</%block>
 
 <section class="" xmlns="http://www.w3.org/1999/html">
+
+ <header class="header-img">
+
+    <div class="container">
+    <div class="row">
+      <div class="col-12">
+           <div class="row highlight">
+               <div class="col-8 text-left">
+                    <h1>Configuring and Operating Microsoft Azure Stack </h1>
+                    <a href="#">Enroll in Course</a>
+               </div>
+               <div class="col-4 thumbnail-image">
+                    <img src="imgs/thumbnail.png" alt="">
+               </div>
+            </div>
+      </div>  
+    </div>
+    </div>
+  </header>
+    
 	
   <div id="sticky" class="course-detail light-bg">
     <div class="grid-manual grid-container">
-	<div class="row">
-			<div class="grid-manual">
-			<div class="row">
-				<div class="col-12">
-					<div class="row highlight">
-						<div class="col-8 text-left">
-							<span>${course.display_name}</span>
-							<a href="${btn_href}" id="${btn_id}" class="btn-block btn-brand btn-client btn-success register text-center ${btn_class}">${_(btn_text)}
-							</a>
-						</div>
-						<div class="col-4 thumbnail-image">
-							<img src="" alt="" />
-						</div>
-					</div>
-				</div>  
-			</div>
-		</div>
-	</div>
+	
       <div class="inner-container md-col-12" style="margin: auto; padding-top:20px;">
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-6 sticky-course-title hidden">

@@ -166,29 +166,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
   </header>
   <div id="sticky" class="course-detail light-bg">
     <div class="grid-manual grid-container">
-		
-    <div class="intro-inner-wrapper">
-      <div class="table">
-      <section class="intro">
-        <div class="heading-group">
-          <h1>${course_details.title or course.display_name}</h1>
-        </div>
-
-        <div class="main-cta">
- 	  
-          <a href="${btn_href}" id="${btn_id}" class="btn-block btn-brand btn-client btn-success register text-center ${btn_class}">
-              ${_(btn_text)} </a>
-          <div id="register_error"></div>
-        </div>
-      </section>
-      <div class="media">
-        <div class="hero">
-          <img alt="${course.course_image_url}" src="">
-        </div>
-      </div>
-    </div>
-      </div>
-		
       <div class="inner-container md-col-12" style="margin: auto; padding-top:20px;">
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-6 sticky-course-title hidden">
@@ -309,7 +286,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
   </div>
 	<div class="grid-manual">
 		<div class="row">
-			<div class="col-12 course-overview-title">
+			<div class="col-12">
 					<h2>${course_details.title or course.display_name}</h2> 
 					<p>${HTML(course_details.overview)}</p> 
 			</div>

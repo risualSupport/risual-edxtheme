@@ -1024,6 +1024,11 @@ view-course-title h2{
 } 
 
  //Courses View Page
+ 
+.course-details {
+	margin: auto;
+	padding: 20px;
+}
 
 .header-img {
     background-image: url(/static/risual-theme/images/about-header.jpg);
@@ -1050,7 +1055,7 @@ view-course-title h2{
 }
 
 .text-left h1 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 	text-align: left;
 	color: #000;
 }

@@ -163,7 +163,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
   <div id="sticky" class="course-detail light-bg">
     <div class="grid-manual grid-container">
 	
-      <div class="inner-container course-details md-col-12" style="margin: auto; padding-top:20px;">
+      <div class="inner-container course-details-container md-col-12">
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-6 sticky-course-title hidden">
             <span>${course_details.title or course.display_name}</span>
@@ -177,7 +177,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             <span>${course_details.duration}</span>
           </div>
 
-          <div class="col col-12 sm-col-12 md-col-2">
+          <div class="col col-12 sm-col-12 md-col-2 course-run">
             Price:
             <span>${course_price}</span>
           </div>
@@ -272,7 +272,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
               % endif
             % endif
           % endif
-          <div class="col col-12 sm-col-12 md-col-4">
+          <div class="col col-12 sm-col-12 md-col-4 course-run">
             <a href="${btn_href}" id="${btn_id}" class="btn-block btn-brand btn-client btn-success register text-center ${btn_class}">
               ${_(btn_text)}
             </a>

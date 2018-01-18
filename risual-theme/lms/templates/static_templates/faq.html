@@ -12,46 +12,6 @@
 
   <div class="grid-manual grid-container">
     <div class="inner-container">
-	
-	<script>
-function FAQ(questioncopy) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(questioncopy).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen"
-document.getElementById("defaultOpen").click();
-</script>
-
-<div class="tab">
-  <button class="tablinks" onclick="FAQ('Question 1')" id="defaultOpen">Question 1</button>
-  <button class="tablinks" onclick="FAQ('Question 2')">Question 2</button>
-  <button class="tablinks" onclick="FAQ('Question 3')">Question 3</button>
-</div>
-
-<div id="Question 1" class="tabcontent">
-  <h3>Question 1</h3>
-  <p>Lorem ipsum dolor sit amet.</p>
-</div>
-
-<div id="Question 2" class="tabcontent">
-  <h3>Question 2</h3>
-  <p>Lorem ipsum dolor sit amet.</p> 
-</div>
-
-<div id="Question 3" class="tabcontent">
-  <h3>Question 3</h3>
-  <p>Lorem ipsum dolor sit amet.</p>
-</div>
 
       <div class="row">
         <div class="col col-12 sm-col-12 md-col-12">

@@ -603,6 +603,42 @@ header.header-main {
   }
 }
 
+//Certificate 
+
+.cert-background {
+    background-image: url(../images/cert-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 800px;
+    width: 100%;
+}
+
+.cert-title {
+    font-size: 60px;
+    margin: 40px   
+}
+
+.cer-details {
+    float: left;
+}
+
+.cert-details p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.cert-details h3 {
+    font-size: 28px;
+    margin-left: 40px;
+}
+
+.cert-details-btm {
+    margin: 40px 20px
+}
+
+
+
 //Courses
 .courses-section {
   background-color: $course-section-background-color;

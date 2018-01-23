@@ -1453,11 +1453,20 @@ btn-brand:hover{
  
 .cta-home {
 	background: url("/static/risual-theme/images/cta-subscription.png") no-repeat top center !important;
+	max-height: 408px;
+	width: 100%;
  }
 
  cta-details h1 {
-	color: #707070
- }
+	color: #707070;
+	float: right;
+	margin-right: 80px;
+}
+
+cta-details span {
+	margin right: 80px;
+	margin-top: 40px;
+}
 
 
 //Media Queries

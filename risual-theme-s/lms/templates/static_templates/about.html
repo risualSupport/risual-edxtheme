@@ -1,0 +1,46 @@
+## mako
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%namespace name='static' file='../static_content.html'/>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About Us")}</%block>
+
+<div class="page-heading">
+  <h1>${_("About Us")}</h1>
+</div>
+<section class="static-content">
+  <div class="grid-manual grid-container">
+    <div class="inner-container">
+      <div class="row">
+        <div class="col col-12 sm-col-8">
+          <p>risual is a dedicated, UK based, globally recognised IT Services organisation delivering business aligned consultancy, solutions and services based solely on the Microsoft platform. Our ability to drive business benefit through innovation, excellent customer service with a deep technical ability has made us one of Microsoft's strongest partners in the industry. This learning platform aims to give you a bespoke learning experience like none other. </p>
+
+          <h2>Looking back </h2>
+          <p>risual was founded in 2005 on the values of honesty, openness and trust. Set up by two young entrepreneurs, Alun Rogers and Richard Proud, the business still champions these values today. All employees are encouraged to conduct themselves in accordance with our values and treat co-workers, customers and those in the community with the respect they deserve. We never have and never will take on work that is not beneficial to the customer. We have challenged and will continue to challenge ourselves, our customers and our business leaders to do more with technology to improve the world we live in. </p>
+
+          <h2>Looking forward </h2>
+          <p>Despite tremendous success over ten years, we are not interested in slowing down. Our policy is firmly built around continuous investment and organic growth and as we grow we find new challenges to overcome and new technologies to understand. 
+			We will continue to invest heavily in our consulting business; we believe that in a world of cloud technology, people need business guidance from experts more than ever. It’s not always easy deploying technology and it can be even more difficult and confusing deciding which to deploy and why.</p>
+			
+			<p>Our solutions business is growing hugely every year. Our policy of working with industry experts means that we can arm business leaders with cutting edge IT resources so they can leave their mark on the sector. 
+			Over the coming years we will see the growth of our retail, justice and education businesses, along with the possible arrival of a few more. </p>
+			
+			<p>risual is unique in how we hire, develop and grow talent. Whilst Managed Services are becoming increasingly popular as an offering from Microsoft Partners, only risual can boast the longstanding ten year partnerships with clients, security and process accreditations. We have pushed for local investment in talent that has led to risual Managed Services (rMS) becoming the business it is today. The future will see further expansion of our services, staff and technologies as we continue our progression forwards.  
+			  
+			“Every customer I talk to is looking for both innovative technology to drive new growth as well as a strategic partner who can help build their own digital capability. 
+			 
+			Satya Nadella Microsoft CEO </p>
+
+        </div>
+        <div class="col col-12 sm-col-4 mission-statement">
+            <img src="${static.url('images/circlecup.png')}" alt="Mission Statement">
+            <p>“We made it our mission to enrich the ecosystem and support the sector, which led to the creation of our innovative apprenticeship model. Our risual Microsoft academies help to provide opportunities for young people whilst creating a pool of talent rich in digital skills.”</p>
+            <p>
+              <strong>Director of Education Tina Jones </strong><br/>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

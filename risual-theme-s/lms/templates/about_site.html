@@ -1,0 +1,74 @@
+## mako
+<%page expression_filter="h"/>
+<%namespace name='static' file='static_content.html'/>
+
+<script type="text/template" id="about-content">
+  <div class="grid-manual">
+    <div class="row">
+      <div class="col col-12 text-center home-about">
+        <h2>About Us</h2>
+		<p>Welcome to our LaaS Platform! At risual, we offer market leading consulting, managed services and solutions in IT. That means there is no-one more equipped to solve a problem through Microsoft technology in the world. Through this platform we pass those expertise onto you so buckle up, get ready and start taking some courses! </p>
+      </div>
+    </div>
+
+    <div class="row about-list text-center">
+      <div class="col col-4 about-list-item">
+        <div class="about-icon">
+          <img src="${static.url('images/Circle1.png')}" alt="Students" />
+          <p>
+            <span class="mb">Participants</span>
+        Industry Experts to Novices we have something for everyone. 
+          </p>
+        </div>
+      </div>
+      <div class="col col-4 about-list-item">
+        <div class="about-icon">
+          <img src="${static.url('images/circle2.png')}" alt="Faculty" />
+          <p>
+            <span>Faculty</span>
+            As a leading cloud service provider for Microsoft within the UK our faculty offers dynamic and engaging training courses for everyone from those who are just starting out in IT to in leaders in the tech industry and even old school tech heads. 
+          </p>
+        </div>
+      </div>
+      <div class="col col-4 about-list-item">
+        <div class="about-icon">
+          <img src="${static.url('images/circle3.png')}" alt="Courses" />
+          <p>
+            <span>Courses</span>
+         At risual we offer a wide range of courses from Office 365 to Virtual Machines, Storage, Networks, Solutions, Big Data, Identity and loads more 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row more-about-btn">
+      <div class="col col-12 text-center">
+        <a href="${static.url('/about')}" class="btn-brand btn-client">More about this site</a>
+      </div>
+    </div>
+	<div class="row">
+		<div class="col-12 text-center view-course-title"> 
+			<h2>Courses Starting Soon</h2>
+		</div>
+	</div>	  
+	<div class="row">
+		<div class="col-12">
+			<a href="${static.url('/courses')}" class="btn-brand btn-client view-courses">View All Courses</a>
+		</div>
+	</div>
+			
+	<div class="row">
+		<div class="col-12 text-center view-course-title"> 
+			<h2>Popular Courses Starting Soon</h2>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-12">
+			<a href="${static.url('/courses')}" class="btn-brand btn-client view-courses">View All Courses</a>
+		</div>
+	</div>
+
+</script>
+
+
+<script src="${static.url('js/about-site.js')}"></script>

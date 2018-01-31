@@ -1,0 +1,26 @@
+## mako
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%namespace name='static' file='../static_content.html'/>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Cookie Policy")}</%block>
+
+<div class="page-heading">
+  <h1>${_("Cookie Policy")}</h1>
+</div>
+<section class="static-content">
+  <div class="grid-manual grid-container">
+    <div class="inner-container">
+      <div class="row">
+        <div class="col col-12 sm-col-12 md-col-12">
+          <h2 id="collaboration-policy">Cookie Policy</h2>
+          <p>
+          This statement explains how we use cookies on learn.risual.com. For information about what types of personal information will be gathered when you visit the website, and how this information will be used, please see our Privacy Policy. 
+All of our web pages use “cookies”. A cookie is a small file of letters and numbers that we place on your computer or mobile device if you agree. These cookies allow us to distinguish you from other users of our website, which helps us to provide you with a good experience when you browse our website and enables us to improve our website. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

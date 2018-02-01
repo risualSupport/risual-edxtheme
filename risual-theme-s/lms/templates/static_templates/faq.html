@@ -1,0 +1,64 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+<%namespace name='static' file='../static_content.html'/>
+
+<%block name="pagetitle">${_("FAQ's")}</%block>
+
+<div class="page-heading">
+  <h1>${_("FAQs")}</h1>
+</div>
+<section class="static-content">
+
+  <div class="grid-manual grid-container">
+    <div class="inner-container">
+
+      <div class="row">
+        <div class="col col-12 sm-col-12 md-col-12">
+          <h2 id="academic-planning">${_("Academic Planning")}</h2>
+          <article class="response">
+            <h3 class="question">Q. Are courses only available online? </h3>
+            <div class="answer" id="edx_basics_faq_answer_0">
+              <p>Yes, the courses are available online only. </p>
+            </div>
+          </article>
+
+          <article class="response">
+            <h3 class="question">Q. How can I share my course completion certificate with others? </h3>
+            <div class="answer" id="edx_basics_faq_answer_1">
+              <p>
+               All certificates have a unique URL that can be shared digitally. You can save the certificate as PDF file that can be sent over an electronic mail. Learners can add that URL to their LinkedIn profile with a link that appears on the certificate. Learners can also download the certificate as a PDF if they wish.  
+              </p>
+            </div>
+          </article>
+
+          <article class="response">
+            <h3 class="question">Q. Is there any limit on the duration to complete each course?  </h3>
+            <div class="answer" id="edx_basics_faq_answer_2">
+              <p>
+               You need to complete the course within the specific dates set for each course.  
+              </p>
+            </div>
+          </article>
+
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<%block name="js_extra">
+<script src="${static.url('js/animation-scroll.js')}"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var open_question = "";
+    var question_id;
+    $('.response').click(function(){
+      $(this).toggleClass('opened');
+      answer = $(this).find(".answer");
+      answer.slideToggle('fast');
+    });
+});
+
+</script>
+</%block>

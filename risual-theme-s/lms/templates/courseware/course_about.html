@@ -144,10 +144,9 @@ from openedx.core.djangolib.js_utils import js_escaped_string
     <div class="grid-manual">
 		<div class="row">
 		  <div class="col-12">
-			   <div class="row highlight">
-				   <div class="col-8 text-left">
+			   <div class="row">
+				   <div class="col-12 highlight text-center">
 						<h1>${course_details.title or course.display_name}</h1>
-						<p> This is where short description could go </p>
 				   </div>
 				</div>
 		  </div>  
@@ -167,15 +166,6 @@ from openedx.core.djangolib.js_utils import js_escaped_string
           <div class="col col-12 sm-col-12 md-col-3 course-run">
             Start Date:
             <span>${course_details.start_date.strftime('%b %-d, %Y')}</span>
-          </div>
-          <div class="col col-12 sm-col-12 md-col-3 course-run">
-            Duration:
-            <span>${course_details.duration}</span>
-          </div>
-
-          <div class="col col-12 sm-col-12 md-col-2 course-run">
-            Price:
-            <span>${course_price}</span>
           </div>
           <%
             btn_text = 'Enroll Now'
@@ -280,7 +270,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 	<div class="grid-manual">
 		<div class="row">
 			<div class="col-12">
-					<h2>${course_details.title or course.display_name}</h2> 
+					<h1>${course_details.title or course.display_name}</h1> 
 					<p>${HTML(course_details.overview)}</p> 
 			</div>
 		</div>

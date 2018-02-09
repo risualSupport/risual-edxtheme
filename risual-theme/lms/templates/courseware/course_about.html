@@ -147,10 +147,9 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 			   <div class="row highlight">
 				   <div class="col-8 text-left">
 						<h1>${course_details.title or course.display_name}</h1>
-						<p> This is where short description could go </p>
 				   </div>
 				   <div class="col-4 thumbnail-image">
-						<img src="${static.url('images/thumbnail.png')}">
+						<img src="${course.course_image_url}" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
 				   </div>
 				</div>
 		  </div>  
@@ -171,15 +170,15 @@ from openedx.core.djangolib.js_utils import js_escaped_string
             Start Date:
             <span>${course_details.start_date.strftime('%b %-d, %Y')}</span>
           </div>
-          <div class="col col-12 sm-col-12 md-col-3 course-run">
-            Duration:
-            <span>${course_details.duration}</span>
-          </div>
+          <!-- <div class="col col-12 sm-col-12 md-col-3 course-run"> -->
+            <!-- Duration: -->
+            <!-- <span>${course_details.duration}</span> -->
+          <!-- </div> -->
 
-          <div class="col col-12 sm-col-12 md-col-2 course-run">
+         <--! <div class="col col-12 sm-col-12 md-col-2 course-run">
             Price:
             <span>${course_price}</span>
-          </div>
+          </div> -->
           <%
             btn_text = 'Enroll Now'
             btn_href = '#'

@@ -1475,6 +1475,7 @@ btn-brand:hover{
 	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
 	width: 400px !important;
 	height: 460px;
+	margin-bottom: 150px;
 }
 	
 .subscriber-type p {
@@ -1499,6 +1500,14 @@ btn-brand:hover{
 	font-size: 20px;
 }
 
+.intro-text {
+	margin-bottom: 150px;
+}
+
+.intro-text p {
+	line-height: normal;
+}
+
 // cta home
  
 .cta-home {
@@ -1520,6 +1529,24 @@ btn-brand:hover{
 	float: right;
 	margin-right: 24px;
 	margin-top: 120px;
+}
+
+.cta-banner {
+	background-image: url ("/static/risual-theme/images/orange-background.png") no-repeat 
+	height: 250px;
+}
+
+.cta-home {
+	font-size: 60px;
+	color: #fff;
+}
+
+.cta-home a {
+    margin-bottom: 20px;
+    background-color: white;
+    color: #fcaf17;
+    padding: 10px 60px 10px 60px;
+	font-size: 20px;
 }
 
 
@@ -1777,4 +1804,12 @@ btn-brand:hover{
 .justify-content-around {
 	-ms-flex-pack:distribute!important;
 	justify-content:space-around!important;
+	}
+	
+.container-fluid {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
 	}

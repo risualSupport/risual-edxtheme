@@ -1473,7 +1473,26 @@ btn-brand:hover{
 
 .subscriber-type {
 	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
+	width; auto;
 	}
+	
+.subscriber-type p {
+	padding: 0px 30px;
+	
+}
+
+.subscriber-type h2 {
+	margin-top: 30px;
+	
+}
+
+.subscriber-type a {
+    margin-bottom: 20px;
+    background-color: white;
+    color: #fcaf17;
+    padding: 10px 60px;
+}
+
 
 
 // cta home

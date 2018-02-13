@@ -1473,12 +1473,12 @@ btn-brand:hover{
 
 .subscriber-type {
 	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
-	width: auto;
+	background-size: auto;
 	}
 	
 .subscriber-type p {
 	padding: 0px 30px;
-	
+	margin-bottom: 30px;
 }
 
 .subscriber-type h2 {

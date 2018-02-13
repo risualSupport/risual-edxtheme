@@ -1741,3 +1741,10 @@ btn-brand:hover{
     }
   }
 }
+
+// Added Bootstrap
+
+.justify-content-around {
+	-ms-flex-pack:distribute!important;
+	justify-content:space-around!important;
+	}

@@ -1473,7 +1473,8 @@ btn-brand:hover{
 
 .subscriber-type {
 	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
-	background-size: cover;
+	width: 400px !important;
+	height: 460px;
 }
 	
 .subscriber-type p {

@@ -1812,3 +1812,8 @@ course-details p {
 	margin-right:auto;
 	margin-left:auto;
 	}
+	
+.align-self-center {
+	-ms-flex-item-align:center!important;
+	align-self:center!important
+	}

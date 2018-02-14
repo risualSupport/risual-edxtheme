@@ -7,9 +7,20 @@ from datetime import datetime
 import pytz
 from django.conf import settings
 %>
+
+import sendgrid
+
+import os
+
+from sendgrid.helpers.mail import *
+
+sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('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'))
+
 <%inherit file="../main.html" />
 <%namespace name='static' file='../static_content.html'/>
 <%block name="pagetitle">${_("Contact Us")}</%block>
+
+
 
 <div class="page-heading">
   <h1>${_("Contact Us")}</h1>
@@ -63,6 +74,13 @@ from django.conf import settings
             <div class="input-group">
               <label for="" class="text-light">* Required Fields</label>
             </div>
+			
+			from_email = Email(input-lg.email)
+			to_email = Email("ChristopherH@risual.com")
+			subject = (input-lg.subject)
+			content = (input-lg, email, name, user_type, subject, details)
+			mail = Mail(from_email, subject, to_email, content)
+
           </form>
         </div>
       </div>

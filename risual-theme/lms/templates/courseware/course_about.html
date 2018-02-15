@@ -270,10 +270,8 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 	<div class="grid-manual">
 		<div class="row">
 			<div class="col-12 course-details">
-					<h1>${course_details.title or course.display_name}</h1> 
-					<article class="course" id="${course.id}" role="region" aria-label="${course.display_name_with_default}">
-					 <img src="${course.course_image_url}" alt="${course.display_name_with_default} ${course.display_number_with_default}">
-					</article>
+					<h1>${course_details.title or course.display_name}</h1> 			
+					 <img src=${course.course_image_url} alt=${course.display_name_with_default} ${course.display_number_with_default}>
 					<p>${HTML(course_details.overview)}</p> 
 			</div>
 		</div>

@@ -41,7 +41,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
         // purchasing workflow is being executed (based on which button is clicked)
         $(".register").click(function(event) {
           var purchase_workflow = "single";
-          if (event.currentTarget.id.includes("bulk")) {
+          if (event.currentTarget.id.indexOf("bulk") > -1) {
             purchase_workflow = "bulk";
           }
           var event_target_input = $("<input>")

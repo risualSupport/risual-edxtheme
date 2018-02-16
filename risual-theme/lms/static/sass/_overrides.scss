@@ -1471,14 +1471,16 @@ btn-brand:hover{
 
 //susbcriber type home
 
-.subscriber-type {
+.subscriber-type .subscriber-type-right {
 	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
 	width: 400px !important;
 	height: 460px;
 	margin-bottom: 150px;
 }
+
+
 	
-.subscriber-type p {
+.subscriber-type p .subscriber-type-right p {
 	padding: 0px 30px 0px 30px;
 	margin-bottom: 30px;
 	font-size: 19px;
@@ -1487,29 +1489,22 @@ btn-brand:hover{
 	margin-top: 40px;
 }
 
-.subscriber-type-right p {
-	padding: 0px 30px 0px 30px;
-	margin-bottom: 30px;
-	font-size: 19px;
-	color: white;
-	line-height: normal;
-	margin-top: 40px;
-}
-
-.subscriber-type-right {
-	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
-	width: 400px !important;
-	height: 460px;
-	margin-bottom: 150px;
-}
-
-.subscriber-type h2 {
+.subscriber-type h2 .subscriber-type-right h2 {
 	margin-top: 30px;
 	font-size: 60px;
 	color: #fff;
 }
 
+
 .subscriber-type a {
+    margin-bottom: 20px;
+    background-color: white;
+    color: #fcaf17;
+    padding: 10px 60px 10px 60px;
+	font-size: 20px;
+}
+
+.subscriber-type-right a {
     margin-bottom: 20px;
     background-color: white;
     color: #fcaf17;

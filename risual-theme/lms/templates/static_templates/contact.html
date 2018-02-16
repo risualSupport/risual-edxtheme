@@ -28,12 +28,12 @@ from django.conf import settings
             </div>
             <div class="input-group">
               <label for="">Full Name*</label>
-              <input type="text" class="input-lg" id="name" name="">
+              <input type="text" class="input-lg" id="name" name="full-name">
             </div>
             <div class="input-group">
               <label for="">I am a</label>
               <div class="custom-select">
-                <select name="user_type" id="user_type" class="input-lg">
+                <select name="user_type" id="user_type" class="input-lg" name="user_type">
                   <option value="">Select</option>
                   <option value="learner">Learner</option>
                   <option value="teacher">Teacher</option>
@@ -44,20 +44,18 @@ from django.conf import settings
             <div class="input-group">
               <label for="">Inquiry Type*</label>
               <div class="custom-select">
-                <select id="subject" class="input-lg">
+                <select id="subject" class="input-lg name="subject">
                   <option value="">Select</option>
                   <option value="payments">Payments</option>
                   <option value="certificates">Certificates</option>
                   <option value="assessments">Assessments</option>
                   <option value="videos">Videos</option>
-                  <option value="discussion-forums">Discussion Forums</option>
-                  <option value="mobile-application">Mobile Application</option>
                 </select>
               </div>
             </div>
             <div class="input-group">
               <label for="">Message*</label>
-              <textarea id="details" rows="10"></textarea>
+              <textarea id="details" rows="10" name="message"></textarea>
             </div>
             <input type="text" name="issue_type" id="issue_type" value="contact" class="hidden">
 			<input type="submit" value="submit" onclick="exec('contactform.py');"/>

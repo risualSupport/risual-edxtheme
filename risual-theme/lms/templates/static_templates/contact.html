@@ -21,7 +21,7 @@ from django.conf import settings
     <div class="inner-container" style="width:100% !important;">
       <div class="row">
         <div style="width:70% !important; margin-left: 15%; align-items:center !important;">
-          <form method="post" id="contact_form" class="form-block" action="form.php">
+          <form method="post" id="contact_form" class="form-block" action="${static.url('form.php')}">
             <div class="input-group">
               <label for="">Email*</label>
               <input type="text" class="input-lg" id="email" name="email">
@@ -58,6 +58,7 @@ from django.conf import settings
               <textarea id="details" rows="10" name="message"></textarea>
             </div>
             <input type="text" name="issue_type" id="issue_type" value="contact" class="hidden">
+			<input type="submit" value="submit">
             <button class="btn-brand btn-client btn-lg" id="submit_btn" onclick="${static.url('form.php')}">Submit</button>
             <div class="input-group">
               <label for="" class="text-light">* Required Fields</label>

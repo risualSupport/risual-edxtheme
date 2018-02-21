@@ -1472,16 +1472,16 @@ btn-brand:hover{
 //susbcriber type home
 
 .subscriber-type {
-	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
-	width: 400px !important;
-	height: 460px;
+	background: url("/static/risual-theme/images/subscription-type.jpg") no-repeat;
+	width: 500px !important;
+	height: 350px;
 	margin-bottom: 150px;
 }
 
 .subscriber-type-right {
-	background: url("/static/risual-theme/images/subscription-type.png") no-repeat;
-	width: 400px !important;
-	height: 460px;
+	background: url("/static/risual-theme/images/subscription-type.jpg") no-repeat;
+	width: 500px !important;
+	height: 350px;
 	margin-bottom: 150px;
 }
 	
@@ -1491,7 +1491,7 @@ btn-brand:hover{
 	font-size: 19px;
 	color: white;
 	line-height: normal;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .subscriber-type-right p {
@@ -1505,16 +1505,11 @@ btn-brand:hover{
 
 .subscriber-type h2 {
 	margin-top: 30px;
-	font-size: 60px;
-	color: #fff;
 }
 
 .subscriber-type-right h2 {
 	margin-top: 30px;
-	font-size: 60px;
-	color: #fff;
 }
-
 
 .subscriber-type a {
     margin-bottom: 20px;
@@ -1531,6 +1526,33 @@ btn-brand:hover{
     padding: 10px 60px 10px 60px;
 	font-size: 20px;
 }
+
+.intro-text {
+	margin-bottom: 150px;
+}
+
+.intro-text p {
+	line-height: normal;
+}
+
+.intro-text h2{
+        font-size: 24px;
+}
+
+.intro-text span {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+course-details p {
+	line-height: normal;
+}
+
+course-details h1 {
+	color: #161616;
+	text-align: left;
+}
+
 
 //about site
 

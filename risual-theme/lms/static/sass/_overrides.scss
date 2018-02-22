@@ -1549,15 +1549,18 @@ btn-brand:hover{
     font-size: 72px;
 }
 
-course-details p {
+.course-details p {
 	line-height: normal;
 }
 
-course-details h1 {
+.course-details h1 {
 	color: #161616;
 	text-align: left;
 }
 
+.intro-text-background {
+    background: url("/static/risual-theme/images/bkIntroText") no-repeat;
+}
 
 //about site
 
@@ -1581,6 +1584,8 @@ course-details h1 {
 	color: #161616;
 	text-align: left;
 }
+
+
 
 // cta home
 

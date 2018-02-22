@@ -43,13 +43,10 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
                 </li>
               % else:
               <li>
-                <a class="btn-brand btn-client" href="/register${login_query()}">${_("Create Account")}</a>
-              </li>
-              <li>
-                <a href="/login${login_query()}">${_("Sign in")}</a>
+                <a href="https://learn-s.risual.com/auth/login/azuread-oauth2/?auth_entry=login&next=%2Fdashboard" class="btn-brand btn-client">${_("Sign in")}</a>
               </li>
             % endif
-			<li><a href="/contact" class="">Contact</a></li>
+			<li><a href="https://www.risual.com/contact-us/" target="_blank" class="">Contact</a></li>
               <li>
                 <a href="/courses">${_("Courses")}</a>
               </li>

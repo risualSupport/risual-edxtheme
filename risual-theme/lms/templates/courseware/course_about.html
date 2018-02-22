@@ -41,7 +41,7 @@ from openedx.core.djangolib.js_utils import js_escaped_string
         // purchasing workflow is being executed (based on which button is clicked)
         $(".register").click(function(event) {
           var purchase_workflow = "single";
-          if (event.currentTarget.id.includes("bulk")) {
+          if (event.currentTarget.id.indexOf("bulk") > -1) {
             purchase_workflow = "bulk";
           }
           var event_target_input = $("<input>")
@@ -144,13 +144,9 @@ from openedx.core.djangolib.js_utils import js_escaped_string
     <div class="grid-manual">
 		<div class="row">
 		  <div class="col-12">
-			   <div class="row highlight">
-				   <div class="col-8 text-left">
+			   <div class="row">
+				   <div class="col-12 highlight text-center">
 						<h1>${course_details.title or course.display_name}</h1>
-						<p> This is where short description could go </p>
-				   </div>
-				   <div class="col-4 thumbnail-image">
-						<img src="${static.url('images/thumbnail.png')}">
 				   </div>
 				</div>
 		  </div>  
@@ -163,22 +159,13 @@ from openedx.core.djangolib.js_utils import js_escaped_string
     <div class="grid-manual grid-container">
 	
       <div class="inner-container course-details-container md-col-12">
-        <div class="row">
+        <div class="row justify-content-around">
           <div class="col col-12 sm-col-12 md-col-6 sticky-course-title hidden">
             <span>${course_details.title or course.display_name}</span>
           </div>
           <div class="col col-12 sm-col-12 md-col-3 course-run">
             Start Date:
             <span>${course_details.start_date.strftime('%b %-d, %Y')}</span>
-          </div>
-          <div class="col col-12 sm-col-12 md-col-3 course-run">
-            Duration:
-            <span>${course_details.duration}</span>
-          </div>
-
-          <div class="col col-12 sm-col-12 md-col-2 course-run">
-            Price:
-            <span>${course_price}</span>
           </div>
           <%
             btn_text = 'Enroll Now'
@@ -282,14 +269,13 @@ from openedx.core.djangolib.js_utils import js_escaped_string
   </div>
 	<div class="grid-manual">
 		<div class="row">
-			<div class="col-12">
-					<h2>${course_details.title or course.display_name}</h2> 
+			<div class="col-12 course-details">		
 					<p>${HTML(course_details.overview)}</p> 
 			</div>
 		</div>
         
       <div class="row">
-        <div class="col col-12"><h2>Instructors</h2>
+        <div class="col col-12"><h2></h2>
         <% index = 0 %>
         % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
         <div class="row instructors">

@@ -1121,11 +1121,13 @@ view-course-title h2{
 }
 
 .highlight {
-    background-color: rgba(251,251,251,0.9);
-    border: 1px solid #fff;
     margin: 0 auto;
     padding: 20px;
     margin-top: 100px;
+}
+
+.highlight h1 {
+	font-size: 60px;
 }
 
 .text-left h1 {
@@ -1455,14 +1457,137 @@ btn-brand:hover{
   }
 }
 
+// Course dashboard
+
+.enter-course {
+	background-color: #fcaf17;
+	color: #fff;
+}
+
+.enter-course:hover {
+	background-color: #fcaf17;
+	color: #fff;
+}
+
+//susbcriber type home
+
+.subscriber-type {
+	background: url("/static/risual-theme/images/subscription-type.jpg") no-repeat;
+	width: 500px !important;
+	height: 350px;
+	margin-bottom: 150px;
+}
+
+.subscriber-type-right {
+	background: url("/static/risual-theme/images/subscription-type.jpg") no-repeat;
+	width: 500px !important;
+	height: 350px;
+	margin-bottom: 150px;
+}
+	
+.subscriber-type p {
+	padding: 0px 30px 0px 30px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	line-height: normal;
+	margin-top: 40px;
+    color: #fff;
+}
+
+.subscriber-type-right p {
+	padding: 0px 30px 0px 30px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	line-height: normal;
+	margin-top: 40px;
+    color: #fff;
+}
+
+.subscriber-type h2 {
+	margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.subscriber-type-right h2 {
+	margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.subscriber-type a {
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #fcaf17;
+    padding: 10px 60px 10px 60px;
+	font-size: 20px;
+}
+
+.subscriber-type-right a {
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #fcaf17;
+    padding: 10px 60px 10px 60px;
+	font-size: 20px;
+}
+
+.intro-text {
+	margin-bottom: 150px;
+}
+
+.intro-text p {
+	line-height: normal;
+}
+
+.intro-text h2{
+        font-size: 24px;
+}
+
+.intro-text span {
+    font-size: 72px;
+}
+
+.course-details p {
+	line-height: normal;
+}
+
+.course-details h1 {
+	color: #161616;
+	text-align: left;
+}
+
+.intro-text-background {
+    background: url("/static/risual-theme/images/bkIntroText") no-repeat center center /cover;
+}
+
+//about site
+
+.intro-text {
+	margin-bottom: 150px;
+}
+
+.intro-text p {
+	line-height: normal;
+}
+
+.intro-text h2{
+        font-size: 24px;
+}
+
+course-details p {
+	line-height: normal;
+}
+
+course-details h1 {
+	color: #161616;
+	text-align: left;
+}
+
+
+
 // cta home
- 
-.cta-home {
-	background: url("/static/risual-theme/images/cta-subscription.png") no-repeat top center !important;
-	height: 408px;
-	width: 100%;
-	margin-top: 80px;
- }
 
 .cta-details h1 {
 	color: #34383a;
@@ -1478,6 +1603,36 @@ btn-brand:hover{
 	margin-top: 120px;
 }
 
+.cta-banner {
+	background: url("/static/risual-theme/images/orange-background.png") no-repeat;
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+}
+
+.cta-home h1 {
+	font-size: 40px;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+.cta-home a {
+    margin-bottom: 20px;
+    background-color: white;
+    color: #fcaf17;
+    padding: 10px 60px 10px 60px;
+	font-size: 20px;
+}
+
+.sign-up p {
+	font-size: 14px;
+}
+
+.sign-up p a {
+	background-color: none;
+	padding: 0px;
+	margin: 0px;
+}
 
 //Media Queries
 
@@ -1727,3 +1882,23 @@ btn-brand:hover{
     }
   }
 }
+
+// Added Bootstrap
+
+.justify-content-around {
+	-ms-flex-pack:distribute!important;
+	justify-content:space-around!important;
+	}
+	
+.container-fluid {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	}
+	
+.align-self-center {
+	-ms-flex-item-align:center!important;
+	align-self:center!important;
+	}

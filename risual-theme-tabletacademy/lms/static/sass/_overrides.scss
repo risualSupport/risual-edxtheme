@@ -1021,9 +1021,26 @@ course-overview-title h2 {
     padding: 5px 5px 5px 5px;
 }
 
+p.blue-background {
+    color: white;
+    text-align: center;
+}
+
+img.inline-logo {
+    height: 80px;
+}
+
+img.inline-logo-tablet {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
 .red-typography {
-    font-size: 24px;
-    color: #F15F38;
+    font-size: 24px !important;
+    color: #F15F38 !important;
+    line-height: 28px!important;
+    font-weight: 800;
+    margin-top: 100px;
 }
 
 

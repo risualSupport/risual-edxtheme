@@ -523,9 +523,9 @@ header.header-main {
     }
   }
   &.hero-main{
-    background: url("../images/home-banner.jpg") no-repeat top center !important;
+    background: url("../images/home-banner.png") no-repeat top center !important;
     background-size: cover !important;
-      height:500px !important;
+      height:100% !important;
   }
   &.hero-catalog{
     background: url("../images/HeaderRectangleGraphic.png") no-repeat center center !important;

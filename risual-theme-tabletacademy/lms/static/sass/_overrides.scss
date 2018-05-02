@@ -1043,6 +1043,15 @@ img.inline-logo-tablet {
     margin-top: 100px;
 }
 
+.red-typography-home {
+    font-size: 24px !important;
+    color: #F15F38 !important;
+    line-height: 28px!important;
+    font-weight: 800;
+    margin-top: 100px;
+}
+
+
 
 //about-site.html
 
@@ -1504,14 +1513,12 @@ btn-brand:hover{
 	background: url("/static/risual-theme/images/subscription-type.jpg") no-repeat;
 	width: 500px !important;
 	height: 350px;
-	margin-bottom: 150px;
 }
 
 .subscriber-type-right {
 	background: url("/static/risual-theme/images/subscription-type.jpg") no-repeat;
 	width: 500px !important;
 	height: 350px;
-	margin-bottom: 150px;
 }
 	
 .subscriber-type p {

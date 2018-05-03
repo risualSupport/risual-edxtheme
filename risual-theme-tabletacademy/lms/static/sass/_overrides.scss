@@ -1022,7 +1022,7 @@ course-overview-title h2 {
 }
 
 p.blue-background {
-    color: white;
+    color: white !important;
     text-align: center;
 }
 
@@ -1049,9 +1049,15 @@ img.inline-logo-tablet {
     margin-top: 100px;
 }
 
+.blue-background a {
+    color: white;
+    text-decoration: underline;
+}
 
 
 //about-site.html
+
+
 
 .view-courses {
 	float: right;
@@ -1554,7 +1560,7 @@ btn-brand:hover{
 .subscriber-type a {
     margin-bottom: 20px;
     background-color: #fff;
-    color: #fcaf17;
+    color: #F15F38;
     padding: 10px 60px 10px 60px;
 	font-size: 20px;
 }
@@ -1562,7 +1568,7 @@ btn-brand:hover{
 .subscriber-type-right a {
     margin-bottom: 20px;
     background-color: #fff;
-    color: #fcaf17;
+    color: #F15F38;
     padding: 10px 60px 10px 60px;
 	font-size: 20px;
 }

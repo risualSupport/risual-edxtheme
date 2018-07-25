@@ -1,11 +1,11 @@
 
-(function(require) {
+(function (require) {
     'use strict';
 
     require([
         'edx-ui-toolkit/js/utils/html-utils',
         '/static/example/js/leanModal.js'
-    ], function(HtmlUtils) { // eslint-disable-line no-unused-vars // jshint ignore:line
+    ], function (HtmlUtils) { // eslint-disable-line no-unused-vars // jshint ignore:line
         function expandDescription(entireDescriptionContent) {
             var showLessLinkHtml = '<a id="description_less" href="#" class="brand-link">Less</a>';
             HtmlUtils.setHtml('.course-description', HtmlUtils.HTML(entireDescriptionContent + showLessLinkHtml));

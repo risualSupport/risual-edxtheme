@@ -465,7 +465,6 @@ header.header-main {
 //Hero
 
 .hero {
-  min-height: 600px;
   position: relative;
   z-index: 0;
   background-size: cover !important;
@@ -523,7 +522,7 @@ header.header-main {
     }
   }
   &.hero-main{
-    background: url("../images/home-banner.png") no-repeat top center !important;
+    background: url("../images/home-banner.png") no-repeat;
     background-size: 100% !important;    
   }
   &.hero-catalog{

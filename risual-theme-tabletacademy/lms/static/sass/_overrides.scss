@@ -522,8 +522,8 @@ header.header-main {
     }
   }
   &.hero-main{
-    background: url("../images/home-banner.png") no-repeat;
-    background-size: 100% !important;    
+   max-width: 100%;
+   min-width: 100%;
   }
   &.hero-catalog{
     background: url("../images/HeaderRectangleGraphic.png") no-repeat center center !important;

@@ -525,6 +525,10 @@ header.header-main {
    max-width: 100%;
    min-width: 100%;
   }
+  &.hero img{
+    max-width: 100%;
+    min-width: 100%;
+  }
   &.hero-catalog{
     background: url("../images/HeaderRectangleGraphic.png") no-repeat center center !important;
     background-size: cover !important;
